@@ -1,0 +1,174 @@
+
+  nav {
+    position: fixed;
+    padding: 0;
+    top: 8px;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row;
+    
+    justify-content: space-around;
+    
+    font-family: 'Shadows Into Light Two', cursive; 
+    background-color: rgb(20, 5, 0);
+    
+    
+    }
+    main {      
+      background-image: url("images/NightSky.jpg");
+      background-attachment: fixed;
+      background-position: no-repeat;
+      background-size: auto;
+          }
+    
+
+    nav a {
+        padding: .5em 2em;
+        text-decoration: none;
+        color: rgb(242, 247, 175);
+        margin-left: 200px;
+        margin-right: 200px;
+      }
+
+      nav a:hover {
+        background-image:linear-gradient(rgb(20, 5, 0), rgb(190, 94, 16));
+        transition: 1.5s ease-in-out;
+        opacity: 0.4;
+        color: rgb(242, 247, 175);
+      }
+
+      .sections {
+        display: flex;
+        flex-direction: column;
+        margin: auto auto;
+        padding: 11px;
+        max-width: 1000px;
+        color: rgb(242, 247, 175);
+        font-family: 'Open Sans', sans-serif;
+
+
+      }
+
+      #aboutMe {
+        display: grid;
+        flex-direction: column;  
+        margin: 2rem auto;
+        padding: 11px;
+        max-width: 1000px;  
+        text-align: center;
+        line-height: 1.6;          
+      }
+
+     #pic {
+       max-width: 100px;
+       max-height: auto;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+     }
+
+      #projects {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 11px;
+        max-width: 1000px;
+        color: rgb(20, 5, 0);
+                   
+      }
+
+      #pets {
+        border: 1px solid rgb(20, 5, 0);
+        max-width: 200px;
+        background-color: rgb(242, 247, 175);
+        text-align: center;
+        border-radius: 5px;
+
+
+
+
+      }
+
+      #Garage {
+        border: 1px solid rgb(20, 5, 0);
+        max-width: 200px;
+        background-color: rgb(242, 247, 175);
+        text-align: center;
+        border-radius: 5px;
+
+      }
+
+      #University {
+        border: 1px solid rgb(20, 5, 0);
+        max-width: 200px;
+        background-color: rgb(242, 247, 175);
+        border-radius: 5px;
+        text-align: center;
+        justify-content: space-between;
+      }
+      h2 {
+        font-family: 'Shadows Into Light Two', cursive;
+        color: goldenrod;
+      }
+      h3 {
+        font-family: 'Shadows Into Light Two', cursive;
+      }
+      
+.footer {
+    background-color: rgb(129, 39, 39);
+    color: rgb(33, 145, 145);
+}
+header {
+    padding: 2em;
+    height: 100vh;
+    text-align: center;
+    font-size: 25;
+    font-family: 'Shadows Into Light Two', cursive;
+    color: rgb(242, 247, 175);
+    
+    
+    
+      background-image: url("images/IMG_0666.JPG");
+      background-attachment: fixed;
+      background-position: no-repeat;
+      background-size: cover;
+    
+    
+
+}
+#contact{
+  position: fixed;
+  padding: 0;
+  bottom: 8px;
+  right: 0;
+  width: 100%;
+
+  display:grid;
+  grid-template-rows: repeat(3, 10vw);
+  justify-content: right;
+  padding: 20px;
+  align-items: end;
+  justify-items: end;
+  
+  
+  
+}
+.fa-cog {
+  color: black;
+}
+
+
+
+
+
+.html{
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+
+h1, h2, h3{
+    color: 666;
+}
