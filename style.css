@@ -1,179 +1,274 @@
+body {
+  width: 100%;
+}
 
-  nav {
-    position: fixed;
-    padding: 0;
-    top: 8px;
-    left: 0;
-    width: 100%;
+header {
+  padding: 2em;
+  height: 100vh;
+  text-align: center;
+  font-size: 25;
+  font-family: 'Shadows Into Light Two', cursive;
+  color: rgb(242, 247, 175);
+  width: 100%;
+  background-image: url("images/IMG_0666.JPG");
+  background-attachment: fixed;
+  background-position: no-repeat;
+  background-size: cover;
+  }
 
+main {      
+  background-image: url("images/NightSky.jpg");
+  background-attachment: fixed;
+  background-position: no-repeat;
+  background-size: auto;
+  width: 100%;
+  }
+
+nav {
+  position: fixed;
+  padding: 0;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  font-family: 'Shadows Into Light Two', cursive; 
+  background-color: rgb(20, 5, 0);
+  }
+      
+nav a {
+  padding: .5em 2em;
+  text-decoration: none;
+  color: rgb(242, 247, 175);
+  margin-left: 200px;
+  margin-right: 200px;
+  }
+
+nav a:hover {
+  background-image:linear-gradient(rgb(20, 5, 0), rgb(190, 94, 16));
+  transition: 1.5s ease-in-out;
+  opacity: 0.4;
+  color: rgb(242, 247, 175);
+  }
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+  padding: 11px;
+  max-width: 1000px;
+  color: rgb(242, 247, 175);
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  }
+
+#aboutMe {
+  display: grid;
+  flex-direction: column;  
+  margin: 2rem auto;
+  padding: 11px;
+  max-width: 1000px;  
+  text-align: center;
+  line-height: 1.6;          
+  }
+
+#pic {
+  max-width: 100px;
+  max-height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 11px;
+  max-width: 1000px;
+  color: rgb(20, 5, 0);    
+  }
+
+  #slider ::selection {
+    color: inherit;
+    background: transparent;
+  }
+  
+  #slider-frame {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #333;
+    position: relative;
+  }
+  
+  #slider-prev,
+  #slider-next {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
     display: flex;
-    flex-flow: row;
-    
-    justify-content: space-around;
-    
-    font-family: 'Shadows Into Light Two', cursive; 
-    background-color: rgb(20, 5, 0);
-    
-    
-    }
-    main {      
-      background-image: url("images/NightSky.jpg");
-      background-attachment: fixed;
-      background-position: no-repeat;
-      background-size: auto;
-          }
-    
+    padding: 1em;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 2px #000;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  #slider-prev:hover,
+  #slider-next:hover {
+    background: rgba(255,255,255,0.3);
+  }
+  
+  #slider-prev {
+    left: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #slider-next {
+    right: 0;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  #slider-frame {
+    background: #ccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  
+    height: 15em;
+  }
+  
+  #slider-frame [data-src] {
+    display: none;
+  }
+  
+  #slider-caption {
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 0.2em 0.5em;
+    font-size: 0.8em;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  #slider-caption.flash {
+    transition: 0s;
+    background: #ccc;
+  }
+  
+      
+#pets {
+  border: 1px solid rgb(20, 5, 0);
+  max-width: 200px;
+  background-color: rgb(242, 247, 175);
+  text-align: center;
+  border-radius: 5px;
+  }
 
-    nav a {
-        padding: .5em 2em;
-        text-decoration: none;
-        color: rgb(242, 247, 175);
-        margin-left: 200px;
-        margin-right: 200px;
-      }
+#Garage {
+  border: 1px solid rgb(20, 5, 0);
+  max-width: 200px;
+  background-color: rgb(242, 247, 175);
+  text-align: center;
+  border-radius: 5px;
+  }
 
-      nav a:hover {
-        background-image:linear-gradient(rgb(20, 5, 0), rgb(190, 94, 16));
-        transition: 1.5s ease-in-out;
-        opacity: 0.4;
-        color: rgb(242, 247, 175);
-      }
+#University {
+  border: 1px solid rgb(20, 5, 0);
+  max-width: 200px;
+  background-color: rgb(242, 247, 175);
+  border-radius: 5px;
+  text-align: center;
+  justify-content: space-between;
+  }
 
-      .sections {
-        display: flex;
-        flex-direction: column;
-        margin: auto auto;
-        padding: 11px;
-        max-width: 1000px;
-        color: rgb(242, 247, 175);
-        font-family: 'Open Sans', sans-serif;
-        text-align: center;
+.contact_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background: pink;
+  height: 20rem;
+}
+  
+#contact {
+  list-style: none;
+  display: flex;
+  flex-direction: column-reverse;
+  position: fixed;
+  right: 0;
+  bottom: 2rem;
+  width: 5rem;
+  height: 13rem;
+  justify-content: space-between;
+  }
 
+contact a:hover {
+  height: 50rem;
+}
 
-      }
+h2 {
+  font-family: 'Shadows Into Light Two', cursive;
+  color: goldenrod;
+  }
 
-      #aboutMe {
-        display: grid;
-        flex-direction: column;  
-        margin: 2rem auto;
-        padding: 11px;
-        max-width: 1000px;  
-        text-align: center;
-        line-height: 1.6;          
-      }
-
-     #pic {
-       max-width: 100px;
-       max-height: auto;
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-     }
-
-      #projects {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 11px;
-        max-width: 1000px;
-        color: rgb(20, 5, 0);
-        
-                   
-      }
-
-      #pets {
-        border: 1px solid rgb(20, 5, 0);
-        max-width: 200px;
-        background-color: rgb(242, 247, 175);
-        text-align: center;
-        border-radius: 5px;
-
-
-
-
-      }
-
-      #Garage {
-        border: 1px solid rgb(20, 5, 0);
-        max-width: 200px;
-        background-color: rgb(242, 247, 175);
-        text-align: center;
-        border-radius: 5px;
-
-      }
-
-      #University {
-        border: 1px solid rgb(20, 5, 0);
-        max-width: 200px;
-        background-color: rgb(242, 247, 175);
-        border-radius: 5px;
-        text-align: center;
-        justify-content: space-between;
-      }
-      h2 {
-        font-family: 'Shadows Into Light Two', cursive;
-        color: goldenrod;
-      }
-      h3 {
-        font-family: 'Shadows Into Light Two', cursive;
-      }
+h3 {  
+  font-family: 'Shadows Into Light Two', cursive;
+  }
       
 footer {
-    
     color: rgb(33, 145, 145);
     text-align: right;
     font-family: 'Shadows Into Light Two', cursive; 
     background-color: rgb(20, 5, 0);
-}
-header {
-    padding: 2em;
-    height: 100vh;
-    text-align: center;
-    font-size: 25;
-    font-family: 'Shadows Into Light Two', cursive;
-    color: rgb(242, 247, 175);
-    
-    
-    
-      background-image: url("images/IMG_0666.JPG");
-      background-attachment: fixed;
-      background-position: no-repeat;
-      background-size: cover;
-    
-    
+  }
 
-}
-#contact{
-  position: fixed;
-  padding: 0;
-  bottom: 8px;
-  right: 0;
-  width: 100%;
-
-  display:grid;
-  grid-template-rows: repeat(3, 10vw);
-  justify-content: right;
-  padding: 20px;
-  align-items: end;
-  justify-items: end;
-  
-  
-  
-}
-.fa-cog {
+.fa-cog{
   color: black;
 }
 
-
-
-
-
 .html{
-    font-size: 16px;
-    font-family: sans-serif;
-
+  font-size: 16px;
+  font-family: sans-serif;
 }
 
 h1, h2, h3{
-    color: 666;
+  color: 666;
+}
+
+.container{
+  width:800px;
+  height:400px;
+  padding:20px;
+  border:1px solid gray;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  background: black; 
+
+}
+.image-slider-wrapper{
+  overflow: hidden;
+
+}
+
+#image_slider{
+  position: relative;
+  height: 280px;
+  padding:0;
+}
+
+#image_slider li{
+  max-width: 100%;
+  float:left;
+  list-style: none;
+}
+#contact > ul > li:hover{
+  padding : 12px;
 }

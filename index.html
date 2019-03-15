@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-        <link rel="stylesheet" href="FlexBox.css">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
@@ -13,19 +12,15 @@
 
 <body>
     <header>
-    <h1>Matt St. John</h1>
-    <h3>Software Developer Apprentice</h3>
-    </header>
-    <main>
-
-    
-    <nav id=bar>
-        
+        <nav id=bar>
             <a href=#aboutMe>ABOUT ME</a>
             <a href=#projects>PROJECTS</a>
-        
-    </nav>
-        
+        </nav>
+        <h1>Matt St. John</h1>
+        <h3>Software Developer Apprentice</h3>
+    </header>
+    
+    <main>
     <section class="sections">
         <div id="aboutMe">
         <h2>About Me</h2>
@@ -33,50 +28,63 @@
 
                 Curiosity, a sense of adventure, and a willingness to learn led me to visit over thirty countries so far and to live in four. The same impulses brought me to We Can Code IT in Cleveland, Ohio, where I am learning software developement from industry professionals.
             </p>
-            <p class=stars>*   *   *</p>
+            <p class="stars">*   *   *</p>
             <p>C# • .NET • Active Server Pages / ASP.net • JavaScript • JQuery • Flexbox • MVC • HTML5 • CSS3 • Grid • Bootstrap • TDD • Agile (Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile • Structured Query Language (SQL) • Relational Databases / MS SQL • Source Control / GitHub</p>
-            </div>
-            <h2>Projects</h2><p></p>
-
+        </div>
+        <h2>Projects</h2><p></p>
         <div id="projects">
-        <article id="pets">
-            <h3>VIRTUAL PETS AMOK</h3>
-            <a href="https://www.youtube.com/watch?v=fSByydx1JdU"><i class="fas fa-dog"></i></a>
-            <p>C#</p>
-            <p>Users take care of an organic or robotic pet by balancing interactions to keep it alive. First group project with We Can Code It!</p>
-            
-
-            </a>
-        </article>
-        <article id="Garage">
-            <h3>CAR GARAGE</h3>
-            <a href="https://github.com/stjohn292/CarGarage"><i class="fas fa-car"></i></a>
-            <p>C#</p>
-            <p>Users choose cars from a garage and take them for a drive. </p>
-            
-
-
-        </article>
-        <article id="University">
-            <h3>UNIVERSITY CLINIC</h3>
-            <a href="https://github.com/stjohn292/University-Clinic-Hospitals"><i class="fas fa-clinic-medical"></i></a>
-            <p>C#</p>
-            <p>Keeps track of which employees at a hospital have been paid and directs employees to perform tasks.</p>
-           
-
-
-        </article>
-    </div>
+            <article id="pets">
+                <h3>VIRTUAL PETS AMOK</h3>
+                <p>C# Console App</p>
+                <p>Users take care of an organic or robotic pet by balancing interactions to keep it alive. First group project with We Can Code It!</p>
+                <a href="https://www.youtube.com/watch?v=fSByydx1JdU"><i class="fas fa-dog"></i></a>
+            </article>
+            <article id="Garage">
+                <h3>CAR GARAGE</h3>
+                <a href="https://github.com/stjohn292/CarGarage"><i class="fas fa-car"></i></a>
+                <p>C#</p>
+                <p>Users choose cars from a garage and take them for a drive. </p>
+            </article>
+            <article id="University">
+                <h3>UNIVERSITY CLINIC</h3>
+                <a href="https://github.com/stjohn292/University-Clinic-Hospitals"><i class="fas fa-clinic-medical"></i></a>
+                <p>C#</p>
+                <p>Keeps track of which employees at a hospital have been paid and directs employees to perform tasks.</p>
+            </article>
+        </div>
     </section>
-    
+    <div id="slider">
+        <div id="slider-frame">
+          
+          <div id="slider-prev">PREV</div>
+          <div id="slider-next">NEXT</div>
+
+          <div id="slider-images">
+            <div data-src="images/1.jpg">
+              Come on down
+            </div>
+            <div data-src="images/4.jpg">
+              To Cleveland Town
+            </div>
+            <div data-src="images/5.jpg">
+              Everyone.
+            </div>
+          </div>
+        </div>
+
+        <div id="slider-caption">
+          The caption.
+        </div>
     </div>
-    <div id="contact">
-        <a href="mailto:stjohn292@yahoo.com"><i class="fas fa-envelope-square fa-3x"style=color:orange title="stjohn292@yahoo.com"></i></a>
-        <a href="https://www.linkedin.com/in/matthew-st-john-03bb4658/"><i class="fab fa-linkedin fa-3x"style=color:orange title="Matthew St. John"></i>        </a>
-        <a href="https://github.com/stjohn292"><i class="fab fa-github fa-3x" style=color:orange title=stjohn292></i></a>
-    </div>
+        <div class="contact_container">
+            <ul id = "contact">
+            <li><a href="mailto:stjohn292@yahoo.com"><i class="fas fa-envelope-square fa-3x"style=color:orange title="stjohn292@yahoo.com"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/matthew-st-john-03bb4658/"><i class="fab fa-linkedin fa-3x"style=color:orange title="Matthew St. John"></i></a></li>
+            <li><a href="https://github.com/stjohn292"><i class="fab fa-github fa-3x" id="icon" style=color:orange title=stjohn292></i></a></li>
+            </ul>
+        </div>
     </main>
     
-</body>
 <footer>Matt St. John</footer>
+</body>
 </html>
