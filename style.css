@@ -81,6 +81,19 @@ nav a:hover {
   margin-right: auto;
   }
 
+ #buttonLeft {
+    grid-area: l;
+ }
+ 
+ #buttonRight {
+    grid-area: r;
+ }
+ 
+  #projects article img {
+    width: 70%;
+    border: 1px solid #333;
+ }
+
 #projects {
   display: flex;
   flex-direction: row;
@@ -89,81 +102,8 @@ nav a:hover {
   max-width: 1000px;
   color: rgb(20, 5, 0);    
   }
-
-  #slider ::selection {
-    color: inherit;
-    background: transparent;
-  }
-  
-  #slider-frame {
-    border: 1px solid #fff;
-    border-radius: 3px;
-    box-shadow: 0 0 5px #333;
-    position: relative;
-  }
-  
-  #slider-prev,
-  #slider-next {
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    padding: 1em;
-    color: #fff;
-    font-weight: bold;
-    text-shadow: 0 0 2px #000;
-    transition: 0.5s;
-    cursor: pointer;
-  }
-  
-  #slider-prev:hover,
-  #slider-next:hover {
-    background: rgba(255,255,255,0.3);
-  }
-  
-  #slider-prev {
-    left: 0;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  #slider-next {
-    right: 0;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-  
-  #slider-frame {
-    background: #ccc;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-  
-    height: 15em;
-  }
-  
-  #slider-frame [data-src] {
-    display: none;
-  }
-  
-  #slider-caption {
-    margin-top: 5px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    padding: 0.2em 0.5em;
-    font-size: 0.8em;
-    text-align: center;
-    transition: 0.5s;
-  }
-  
-  #slider-caption.flash {
-    transition: 0s;
-    background: #ccc;
-  }
-  
       
-#pets {
+.projects-card {
   border: 1px solid rgb(20, 5, 0);
   max-width: 200px;
   background-color: rgb(242, 247, 175);
@@ -171,21 +111,9 @@ nav a:hover {
   border-radius: 5px;
   }
 
-#Garage {
-  border: 1px solid rgb(20, 5, 0);
-  max-width: 200px;
-  background-color: rgb(242, 247, 175);
-  text-align: center;
-  border-radius: 5px;
-  }
-
-#University {
-  border: 1px solid rgb(20, 5, 0);
-  max-width: 200px;
-  background-color: rgb(242, 247, 175);
-  border-radius: 5px;
-  text-align: center;
-  justify-content: space-between;
+.projects-card a {
+  text-decoration: none;
+  color: rgb(20, 5, 0);
   }
 
 .contact_container {
@@ -209,7 +137,7 @@ nav a:hover {
   justify-content: space-between;
   }
 
-contact a:hover {
+#contact a:hover {
   height: 50rem;
 }
 
@@ -253,22 +181,7 @@ h1, h2, h3{
   background: black; 
 
 }
-.image-slider-wrapper{
-  overflow: hidden;
 
-}
-
-#image_slider{
-  position: relative;
-  height: 280px;
-  padding:0;
-}
-
-#image_slider li{
-  max-width: 100%;
-  float:left;
-  list-style: none;
-}
 #contact > ul > li:hover{
   padding : 12px;
 }

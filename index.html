@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
         <link rel="stylesheet" href="style.css">
+        <link rel="JavaScript" href="app.js">
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -33,58 +34,50 @@
         </div>
         <h2>Projects</h2><p></p>
         <div id="projects">
-            <article id="pets">
+
+            <button id="buttonLeft">Left</button>
+
+            <article class="projects-card">
+                <a href="https://www.youtube.com/watch?v=fSByydx1JdU" target ="blank">
                 <h3>VIRTUAL PETS AMOK</h3>
                 <p>C# Console App</p>
                 <p>Users take care of an organic or robotic pet by balancing interactions to keep it alive. First group project with We Can Code It!</p>
-                <a href="https://www.youtube.com/watch?v=fSByydx1JdU"><i class="fas fa-dog"></i></a>
+                <img src="./images/1.jpg"></a>
             </article>
-            <article id="Garage">
-                <h3>CAR GARAGE</h3>
-                <a href="https://github.com/stjohn292/CarGarage"><i class="fas fa-car"></i></a>
-                <p>C#</p>
-                <p>Users choose cars from a garage and take them for a drive. </p>
-            </article>
-            <article id="University">
+                                        
+            <article class="projects-card">
+                <a href="https://github.com/stjohn292/University-Clinic-Hospitals">
                 <h3>UNIVERSITY CLINIC</h3>
-                <a href="https://github.com/stjohn292/University-Clinic-Hospitals"><i class="fas fa-clinic-medical"></i></a>
-                <p>C#</p>
+                <p>C# Console App</p>
                 <p>Keeps track of which employees at a hospital have been paid and directs employees to perform tasks.</p>
+                <img src="./images/1.jpg"></a>
             </article>
+
+            <article class="projects-card">
+                    <a href="https://github.com/stjohn292/CarGarage">
+                    <h3>DISNEY MOVIE REVIEW SITE</h3>
+                    <p>MVC / SQL Website</p>
+                    <p>Users can add, edit, and delete reviews to any Disney movie. </p>
+                    <img src="./images/4.jpg"></a>
+                </article>
+    
+
+            <button id="buttonRight">Right</button>
+                
         </div>
     </section>
-    <div id="slider">
-        <div id="slider-frame">
-          
-          <div id="slider-prev">PREV</div>
-          <div id="slider-next">NEXT</div>
-
-          <div id="slider-images">
-            <div data-src="images/1.jpg">
-              Come on down
-            </div>
-            <div data-src="images/4.jpg">
-              To Cleveland Town
-            </div>
-            <div data-src="images/5.jpg">
-              Everyone.
-            </div>
-          </div>
-        </div>
-
-        <div id="slider-caption">
-          The caption.
-        </div>
-    </div>
+    
         <div class="contact_container">
             <ul id = "contact">
-            <li><a href="mailto:stjohn292@yahoo.com"><i class="fas fa-envelope-square fa-3x"style=color:orange title="stjohn292@yahoo.com"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/matthew-st-john-03bb4658/"><i class="fab fa-linkedin fa-3x"style=color:orange title="Matthew St. John"></i></a></li>
-            <li><a href="https://github.com/stjohn292"><i class="fab fa-github fa-3x" id="icon" style=color:orange title=stjohn292></i></a></li>
+            <li><a href="mailto:stjohn292@yahoo.com" target ="blank"><i class="fas fa-envelope-square fa-3x"style=color:orange title="stjohn292@yahoo.com"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/matthew-st-john-03bb4658/"target ="blank"><i class="fab fa-linkedin fa-3x"style=color:orange title="Matthew St. John"></i></a></li>
+            <li><a href="https://github.com/stjohn292" target ="blank"><i class="fab fa-github fa-3x" id="icon" style=color:orange title=stjohn292></i></a></li>
             </ul>
         </div>
     </main>
     
 <footer>Matt St. John</footer>
+<script src="app.js"></script>
+
 </body>
 </html>

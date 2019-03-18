@@ -1,75 +1,50 @@
 (function() {
-
-    setUpPage();
   
-    function setUpPage() {
-      addNavEventListeners();
-      addArticleEventListeners();
-      addWindowEventListeners();
-      addModalEventListeners();
-      addSliderEventListeners();
-    }
-    function addSliderEventListeners() {
   
-        const sliderPrev = document.getElementById('slider-prev');
-        const sliderNext = document.getElementById('slider-next');
-        const sliderFrame = document.getElementById('slider-frame');
-        const sliderCaption = document.getElementById('slider-caption');
+    // function setUpPage() {
+    //   addNavEventListeners();
+    //   addArticleEventListeners();
+    //   addWindowEventListeners();
+    //   addModalEventListeners();
+    //   addSliderEventListeners();
+    // }
     
-        const slides =
-          Array.from(sliderFrame.querySelectorAll('div[data-src]'))
-            .map(div => {
-              return {
-                imageUrl: div.getAttribute('data-src'),
-                caption: div.textContent.trim(),
-              };
-            });
-    
-        let sliderIndex = 0;
-        displaySliderImage();
-    
-        function displaySliderImage() {
-          let { imageUrl, caption } = slides[sliderIndex];
-          sliderFrame.style.backgroundImage = `url('${imageUrl}')`;
-          sliderCaption.innerHTML = caption;
-          sliderCaption.classList.add('flash');
-          setTimeout(() => {
-            sliderCaption.classList.remove('flash');
-          }, 0);
-        }
-    
-        function displayPrevSliderImage() {
-          sliderIndex--;
-          if (sliderIndex < 0) {
-            sliderIndex = slides.length - 1;
-          }
-          displaySliderImage();
-        }
-    
-        function displayNextSliderImage() {
-          sliderIndex++;
-          if (sliderIndex === slides.length) {
-            sliderIndex = 0;
-          }
-          displaySliderImage();
-        }
-    
-        sliderPrev.addEventListener('click', displayPrevSliderImage);
-        sliderNext.addEventListener('click', displayNextSliderImage);
-    
-        setInterval(function() {
-          displayNextSliderImage();
-        }, 4000);
-      }
-    
-    })();  
+let slideIndex = 1;
+showprojects(slideIndex);
 
+function cycleprojectsLeft(){
+   showprojects(slideIndex -= 1)
+}
+
+function cycleprojectsRight(){
+   showprojects(slideIndex += 1)
+}
+
+function showprojects(n) {
+   let i;
+   const projectsCard = document.getElementsByClassName("projects-card");
+   console.log(projectsCard);
+   if (n > projectsCard.length) {
+       slideIndex = 1;
+   }
+   if (n < 1){
+       slideIndex = projectsCard.length;
+   }
+   for (i = 0; i < projectsCard.length; i++){
+       projectsCard[i].style.display = "none";
+   }
+   
+   projectsCard[slideIndex - 1].style.display = "flex";
+}
+
+document.getElementById("buttonLeft").addEventListener("click", cycleprojectsLeft);
+document.getElementById("buttonRight").addEventListener("click", cycleprojectsRight);
+/*    
 var garage = document.getElementById("garage");
 
 var contact = document.getElementsByClassName("contact");
 var contactItems = contact.children;
 contact.forEach (function(contactItem) {
     contactItem.addEventListener("mouseover", function(){
-        contactItem.style.background = red;
-    } );
-});
+        contactItem.style.background = red;*/
+} )();
