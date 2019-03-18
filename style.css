@@ -80,18 +80,10 @@ nav a:hover {
   margin-left: auto;
   margin-right: auto;
   }
-
- #buttonLeft {
-    grid-area: l;
- }
- 
- #buttonRight {
-    grid-area: r;
- }
  
   #projects article img {
     width: 70%;
-    border: 1px solid #333;
+    border: 10px solid #333;
  }
 
 #projects {
@@ -102,6 +94,29 @@ nav a:hover {
   max-width: 1000px;
   color: rgb(20, 5, 0);    
   }
+
+  #projects button {
+    font-size: 40px;
+    font-family: 'Shadows Into Light Two', cursive; 
+    text-align: center;
+    justify-items: center;
+    background-color: rgb(20, 5, 0);
+    text-decoration: none;
+    color: rgb(242, 247, 175);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 200px;
+    height: 100px;
+    width: 80px;
+    border: none;
+  }
+
+  #projects button:hover {
+    background-image:linear-gradient(rgb(20, 5, 0), rgb(190, 94, 16));
+    transition: 1.5s ease-in-out;
+    opacity: 0.4;
+    color: rgb(242, 247, 175);
+    }
       
 .projects-card {
   border: 10px solid rgb(20, 5, 0);
