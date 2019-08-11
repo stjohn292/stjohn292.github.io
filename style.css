@@ -1,3 +1,7 @@
+head {
+  width: 100%;
+}
+
 body {
   width: 100%;
 }
@@ -28,21 +32,19 @@ nav {
   position: fixed;
   padding: 0;
   top: 8px;
-  left: 0;
   width: 100%;
   display: flex;
   flex-flow: row;
   justify-content: space-around;
   font-family: 'Shadows Into Light Two', cursive; 
-  background-color: rgb(20, 5, 0);
   }
       
 nav a {
   padding: .5em 2em;
   text-decoration: none;
   color: rgb(242, 247, 175);
-  margin-left: 200px;
-  margin-right: 200px;
+  background-color: rgb(20, 5, 0);
+
   }
 
 nav a:hover {
@@ -121,7 +123,8 @@ nav a:hover {
 .projects-card {
   border: 10px solid rgb(20, 5, 0);
   padding: 25px;
-  max-width: 900px;
+  width: 750px;
+  height: 550px;
   background-image: url("images/Map.jpg");
   background-position: bottom;
   background-size: cover;
@@ -133,6 +136,15 @@ nav a:hover {
 .projects-card a {
   text-decoration: none;
   color: rgb(20, 5, 0);
+  }
+
+  .projects-card a:hover {
+    transition: 1.5s ease-in-out;
+  }
+
+  #guides a {
+    text-decoration: none;
+    color: rgb(242, 247, 175);
   }
 
 #contact {
@@ -148,7 +160,9 @@ nav a:hover {
   }
 
 #contact a:hover {
-  height: 50rem;
+  transition: 1.5s ease-in-out;
+  opacity: 0.4;
+  color: rgb(242, 247, 175);
 }
 
 h2 {
