@@ -147,6 +147,13 @@ nav a:hover {
     color: rgb(242, 247, 175);
   }
 
+  #guides a:hover {
+    background-image:linear-gradient(rgb(20, 5, 0), rgb(190, 94, 16));
+    transition: 1.5s ease-in-out;
+    opacity: 0.4;
+    color: rgb(242, 247, 175);
+    }
+
 #contact {
   list-style: none;
   display: flex;
